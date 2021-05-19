@@ -9,6 +9,7 @@ import recursionAssignment.Recursion;
 
 public class RecursionTest{
     
+    //Problem Set 1
     @Before
     public void beforeTest(){
       // some steps to perform before tests are run
@@ -44,6 +45,22 @@ public class RecursionTest{
     public void afterTest(){
       // some steps to perform after tests are run
     }
+
     
+    //Problem Set 2    
+    /**
+     * changePi tests
+     */
     
+    @Test
+    public void Test5(){
+      // make assertion statement(s)
+      assertEquals("x3.14x", Recursion.changePi("xpix")); 
+      // assertTrue(TESTBOOLEAN);
+    }
+
+    @Test 
+    public void Test6(){
+      assertEquals("3.143.14", Recursion.changePi("pipi")); 
+    }
 }

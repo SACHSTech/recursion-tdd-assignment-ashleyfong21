@@ -1,7 +1,8 @@
-package recursionAssignment;
+ package recursionAssignment;
 
 public class Recursion{
 
+  //problem set 1
   public static int count7 (int n){ 
     if (n < 7) {
       return 0; 
@@ -13,7 +14,7 @@ public class Recursion{
 
     else { 
       return count7(n / 10); 
-    }
-    
+    } 
   }
+
 }
