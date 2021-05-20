@@ -21,9 +21,8 @@ public class RecursionTest{
     
     @Test
     public void Test1(){
-        // make assertion statement(s)
-        assertEquals(2, Recursion.count7(717)); 
-        // assertTrue(TESTBOOLEAN);
+      // make assertion statement(s)
+      assertEquals(2, Recursion.count7(717)); 
     }
 
     @Test 
@@ -56,7 +55,6 @@ public class RecursionTest{
     public void Test5(){
       // make assertion statement(s)
       assertEquals("x3.14x", Recursion.changePi("xpix")); 
-      // assertTrue(TESTBOOLEAN);
     }
 
     @Test 
