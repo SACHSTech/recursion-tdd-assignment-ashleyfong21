@@ -55,12 +55,12 @@ public class RecursionTest{
     @Test
     public void Test5(){
       // make assertion statement(s)
-      assertEquals("x3.14x", Recursion.changePi("xpix")); 
+      assertEquals("hel*lo", Recursion.pairStar("hello")); 
       // assertTrue(TESTBOOLEAN);
     }
 
     @Test 
     public void Test6(){
-      assertEquals("3.143.14", Recursion.changePi("pipi")); 
+      assertEquals("x*xy*y", Recursion.pairStar("xxyy")); 
     }
 }
