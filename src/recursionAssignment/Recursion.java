@@ -1,4 +1,4 @@
- package recursionAssignment;
+package recursionAssignment;
 
 public class Recursion{
 
@@ -31,6 +31,20 @@ public class Recursion{
     else {
       return str.charAt(0) + changePi(str.substring(1));
     }
-    
   }
+
+  //Problem Set 3
+  public static String stringClean (String str) { 
+    
+    if (str.length() <= 1){
+      return str; 
+    }
+    else if (str.charAt(0) == str.charAt(1)) { 
+      return stringClean(str.substring(1)); 
+    }
+    else {
+      return str.charAt(0) + stringClean(str.substring(1)); 
+    }
+  }
+
 }
