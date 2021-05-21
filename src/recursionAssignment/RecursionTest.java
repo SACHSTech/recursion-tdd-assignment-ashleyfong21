@@ -8,15 +8,16 @@ import org.junit.After;
 import recursionAssignment.Recursion;
 
 public class RecursionTest{
-    
-    //Problem Set 1
+
     @Before
     public void beforeTest(){
       // some steps to perform before tests are run
     }
     
-    /**
+    /** Problem Set 1
+     *
      * count7 tests
+     *
      */
     
     @Test
@@ -46,9 +47,10 @@ public class RecursionTest{
     }
 
     
-    //Problem Set 2    
-    /**
+    /** Problem Set 2    
+     *
      * changePi tests
+     *
      */
     
     @Test
@@ -65,5 +67,27 @@ public class RecursionTest{
     @Test 
     public void Test7(){
       assertEquals("3.14p", Recursion.changePi("pip")); 
+    }
+
+    /** Problem Set 3 
+     * 
+     * stringClean tests 
+     *
+     */
+    
+    @Test
+    public void Test8(){
+      // make assertion statement(s)
+      assertEquals("yza", Recursion.stringClean("yyzzza")); 
+    }
+
+    @Test 
+    public void Test9(){
+      assertEquals("abcd", Recursion.stringClean("abbbcdd")); 
+    }
+    
+    @Test 
+    public void Test10(){
+      assertEquals("Helo", Recursion.stringClean("Hello")); 
     }
 }
