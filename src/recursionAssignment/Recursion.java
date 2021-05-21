@@ -52,7 +52,7 @@ public class Recursion{
       return str.substring(0,0) + "3.14" + changePi(str.substring(2));
     }
 
-    //if the letters p and i are not beside each other call the rest of the string 
+    //if the letters p and i are not beside each other, call the rest of the string 
     else {
       return str.charAt(0) + changePi(str.substring(1));
     }
@@ -70,14 +70,17 @@ public class Recursion{
    */
   public static String stringClean (String str) { 
     
+    //if the length of str is less than/equal to 1, return str
     if (str.length() <= 1){
       return str; 
     }
 
+    //if the first character is equal to the second character, return str without the first character 
     else if (str.charAt(0) == str.charAt(1)) { 
       return stringClean(str.substring(1)); 
     }
     
+    //if the first and second character are not the same, call the rest of the string 
     else {
       return str.charAt(0) + stringClean(str.substring(1)); 
     }
