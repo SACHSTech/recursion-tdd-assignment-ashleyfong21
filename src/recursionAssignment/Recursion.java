@@ -20,7 +20,7 @@ public class Recursion{
     }
 
     //if the right most number is 7, return 1 and the number of times 7 occurs in the rest of the input 
-    else if (n % 10 == 7 { 
+    else if (n % 10 == 7) { 
       return 1 + count7 (n / 10); 
     }
 
@@ -42,14 +42,17 @@ public class Recursion{
    */
   public static String changePi(String str){ 
     
+    //if the length of str is less than 2, return str
     if (str.length() < 2){ 
       return str; 
     }
 
+    //if letters p and i are beside each other, replace it with 3.14 and continue with the rest of the string
     else if (str.charAt(0) == 'p' && str.charAt(1) == 'i') { 
-      return str.substring(0,0)+"3.14"+ changePi(str.substring(2));
+      return str.substring(0,0) + "3.14" + changePi(str.substring(2));
     }
 
+    //if the letters p and i are not beside each other call the rest of the string 
     else {
       return str.charAt(0) + changePi(str.substring(1));
     }

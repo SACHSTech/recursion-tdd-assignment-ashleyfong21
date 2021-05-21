@@ -14,7 +14,8 @@ public class RecursionTest{
       // some steps to perform before tests are run
     }
     
-    /** Problem Set 1
+    /** 
+     * Problem Set 1
      *
      * count7 tests
      *
@@ -47,7 +48,8 @@ public class RecursionTest{
     }
 
     
-    /** Problem Set 2    
+    /** 
+     * Problem Set 2    
      *
      * changePi tests
      *
@@ -69,7 +71,8 @@ public class RecursionTest{
       assertEquals("3.14p", Recursion.changePi("pip")); 
     }
 
-    /** Problem Set 3 
+    /** 
+     * Problem Set 3 
      * 
      * stringClean tests 
      *
