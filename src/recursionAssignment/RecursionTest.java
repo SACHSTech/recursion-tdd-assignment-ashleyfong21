@@ -90,4 +90,9 @@ public class RecursionTest{
     public void Test10(){
       assertEquals("Helo", Recursion.stringClean("Hello")); 
     }
+
+    @Test 
+    public void Test11(){ 
+      assertEquals("ashley", Recursion.stringClean("aasshhlleey"));
+    }
 }
