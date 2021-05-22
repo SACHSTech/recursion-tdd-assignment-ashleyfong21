@@ -40,10 +40,10 @@ public class Recursion{
    * @author A. Fong
    * 
    */
-  public static String changePi(String str){ 
+  public static String changePi (String str) { 
     
     //if the length of str is less than 2, return str
-    if (str.length() < 2){ 
+    if (str.length() < 2) { 
       return str; 
     }
 
